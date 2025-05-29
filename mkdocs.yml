@@ -1,5 +1,6 @@
 site_name: База знаний Dzentech
-site_url: https://yourusername.github.io/my-wiki/
+site_url: https://dzentechwiki.github.io
+use_directory_urls: false
 theme:
   name: material
   palette:
