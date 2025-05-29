@@ -1,0 +1,45 @@
+site_name: База знаний Dzentech
+site_url: https://yourusername.github.io/my-wiki/
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: blue
+    - scheme: slate
+      primary: blue grey
+      accent: blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+
+nav:
+  - Главная: index.md
+  - Начало работы: getting-started.md
+  - База знаний:
+      - Обзор: knowledge-base/overview.md
+      - Советы: knowledge-base/tips.md
+  - Инфраструктура:
+      - Серверы: infrastructure/servers.md
+      - Бэкапы: infrastructure/backups.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.emoji
+
+plugins:
+  - search
